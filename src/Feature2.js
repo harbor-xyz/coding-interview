@@ -20,8 +20,6 @@ export default class Feature2 extends React.Component {
           <input
             type="text"
             onChange={(filterText) => {
-              console.log("ON chANGE");
-              console.log(filterText.value);
               this.setState({
                 filterText: filterText.target.value,
               });
