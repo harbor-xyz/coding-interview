@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Feature1 from "./Feature1";
+import Feature2 from "./Feature2";
 
 const users = [
   {
@@ -43,7 +42,7 @@ const users = [
 function App() {
   return (
     <div className="App">
-      <Feature1 data={users} />
+      <Feature2 users={users} />
     </div>
   );
 }
