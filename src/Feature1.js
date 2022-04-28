@@ -1,3 +1,4 @@
+import "./Feature1.css";
 const data = [
   {
     firstName: "Prakash",
@@ -34,8 +35,8 @@ const data = [
 function Feature1() {
   return (
     <div className="Feature1">
-      <table className="Feature1-body">
-        <thead>
+      <table className="Feature1-table">
+        <thead className="Feature1-tableHeader">
           <tr>
             <th>First Name</th>
             <th>Last Name</th>
@@ -43,11 +44,8 @@ function Feature1() {
             <th>Weight</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="Feature1-tableBody">
           {data.map((datum) => {
-            console.log("DATUM");
-            console.log(datum);
-            console.log(datum.firstName);
             return (
               <tr>
                 <td>{datum.firstName}</td>
